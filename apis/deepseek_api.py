@@ -20,4 +20,7 @@ class deepseek_api:
             stream=False
         )
         self.messages.append(response.choices[0].message)
-        return response.choices[0].message.content
+        if response.status_code != 200:
+            return "Error contacting Deepseek. Status code: " + str(response.status_code)
+        else:
+            return response.choices[0].message.content
