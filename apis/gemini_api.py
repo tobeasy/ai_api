@@ -5,8 +5,8 @@ class gemini_api:
     model = None
     chat = None
 
-    def __init__(self, model):
-        client = genai.Client(api_key=properties.GEMINI_API_KEY)
+    def __init__(self, model, api_key):
+        client = genai.Client(api_key=api_key)
         self.chat = client.chats.create(model=model)
 
     def send_request(self, text):

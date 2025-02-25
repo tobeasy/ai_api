@@ -5,8 +5,8 @@ class deepseek_api:
     client=None
     messages=None
 
-    def __init__(self):
-        self.client = OpenAI(api_key=properties.DEEPSEEK_API_KEY, base_url="https://api.deepseek.com")
+    def __init__(self, api_key):
+        self.client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com")
         self.messages=[
                 {"role": "system", "content": "You are a helpful assistant"},
                 {"role": "user", "content": ""},
