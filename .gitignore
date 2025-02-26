@@ -1,6 +1,7 @@
 /venv
 __pycache__/
 /.vscode
+/dist
 build/
 .DS_Store
 properties.py
