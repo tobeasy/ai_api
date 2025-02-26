@@ -14,9 +14,11 @@ pyinstaller build.spec
 ```
 An executable file will then appear in the /dist directory
 
-## Technical description
+## Using
+After the first start you have to save an api-key for the desired AI-model. To do this, just paste it in the api-key textfield and click 'Save api-key'.
 
-A simple UI was built using Streamlit. It allows to select an AI model to have a conversation with, and add and delete api-keys for it. 
+## Technical description
+A simple UI was built using Streamlit. It allows to select an AI model to have a conversation with and add and delete api-keys for it. 
 The storage for the api-keys was created using SQLite, as no huge amount of data is expected for this application.
 The Request_distributor receives the message of the user and distributes it then to the corresponding api of the selected AI model.
 

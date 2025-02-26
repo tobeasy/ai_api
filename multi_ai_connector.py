@@ -2,6 +2,7 @@ import argparse
 from apis import gemini_api
 from apis import deepseek_api
 
+# This class is for using the AI models without the Streamlit interface
 class Multi_ai_connector:
     gemini_api=None
     deepseek_api=None
