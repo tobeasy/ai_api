@@ -1,5 +1,4 @@
 from openai import OpenAI
-import properties
 
 class deepseek_api:
     client=None

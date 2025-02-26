@@ -1,5 +1,4 @@
 from google import genai
-import properties
 
 class gemini_api:
     model = None
@@ -12,9 +11,12 @@ class gemini_api:
     def send_request(self, text):
         try:
             response = self.chat.send_message(text)
-            return response.text
+            if response.status_code != 200:
+                return f"Error contacting Gemini. Status code: {response.status_code}"
+            else:
+                return response.text
 
         except Exception as e:
-            print(f"Ein Fehler ist aufgetreten: {e}")
+            print(f"Error contacting Gemini: {e}")
     
 
