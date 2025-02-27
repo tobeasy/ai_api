@@ -12,7 +12,9 @@ Create an executable file using pyinstaller
 ``` 
 pyinstaller build.spec
 ```
-An executable file will then appear in the /dist directory
+An executable file will then appear in the /dist directory.
+
+Alternatively you can just run the file run_main.py to start the application.
 
 ## Using
 After the first start you have to save an api-key for the desired AI-model. To do this, just paste it in the api-key textfield and click 'Save api-key'.

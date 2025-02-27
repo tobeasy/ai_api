@@ -11,10 +11,7 @@ class gemini_api:
     def send_request(self, text):
         try:
             response = self.chat.send_message(text)
-            if response.status_code != 200:
-                return f"Error contacting Gemini. Status code: {response.status_code}"
-            else:
-                return response.text
+            return response.text
 
         except Exception as e:
             print(f"Error contacting Gemini: {e}")
