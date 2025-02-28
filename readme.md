@@ -1,5 +1,5 @@
 # Multi AI client
-This project is a simple client to send requests to multiple AI models via one simple UI.
+This project is a simple client to send requests to multiple AI models via one simple UI. Multi round conversations to each AI are supported.
 Currently supported are:
 * gemini-2.0-flash
 * gemini-2.0-flash-lite-preview-02-05
